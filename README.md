@@ -110,7 +110,7 @@ excluded_patterns = ["*v1.*", "*test*"]
 Contributions are welcome! Open an issue or submit a pull request for improvements or bug fixes.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License, what means the project is open-source, allowing anyone to use, modify, and distribute the code with minimal restrictions, provided the original license and copyright notice are included.
 
 ## Disclaimer
 Use this script with caution. Deleting images is irreversible. Always test in a development environment before applying to production.
