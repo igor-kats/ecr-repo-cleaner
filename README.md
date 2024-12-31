@@ -1,12 +1,12 @@
 # ecr-repo-cleaner
 
 ## Overview
-This repository contains a Python script for managing and cleaning up images in AWS Elastic Container Registry (ECR). The script is designed to identify and delete images based on specific repository filters and tag exclusions.
+This repository contains a few Python scripts for managing and cleaning up images in AWS Elastic Container Registry (ECR). The script is designed to identify and delete images based on specific repository filters and tag exclusions.
 Besides it it contains a couple of easy-to-use list repo and retrieve image size scripts.
 
 ### Key Features
 - Filters ECR repositories by name.
-- Excludes images based on tag patterns.
+- Excludes images based on tag patterns, which allows to use "not equal" conditions with wildcards, which is missing in AWS lifecycle policies.
 - Groups images by repository for efficient batch deletion.
 - Provides detailed logging for analysis and troubleshooting.
 - Handles pagination for large datasets.
@@ -52,7 +52,7 @@ Besides it it contains a couple of easy-to-use list repo and retrieve image size
 3. Sample invocation in the script:
    ```python
    profile_name = "your-aws-profile"
-   region_name = "us-east-1"
+   region_name = "us-east-1"   ###example region
    repository_name_filter = "your-repository-filter"
    excluded_patterns = ["*latest*", "*develop*"]
 
